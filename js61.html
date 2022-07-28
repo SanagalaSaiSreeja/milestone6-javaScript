@@ -1,0 +1,30 @@
+<html>
+<body style="background-color: rgb(182, 112, 165); text-align:center;">
+<h2>THe Iterations are</h2>
+<p id="demo"></p>
+<script>
+let text= "";
+for ( let i = 1; i <= 100; i++ )
+{
+if( i%3 ==0 && i%5 ==0)
+{
+text+=" TalentioCompany"+"<br>";
+}
+else if ( i%3 == 0 ) 
+  {
+    text+=" Talentio"+"<br>";
+  }
+  else if ( i%5 == 0 ) 
+  {
+    text+="Company"+"<br>";
+  }
+  else
+  {
+    text+=i+"<br>";
+  }
+}
+document.getElementById("demo").innerHTML=text;
+</script>
+</body>
+
+</html>

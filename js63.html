@@ -1,0 +1,19 @@
+<html>
+    <body style="text-align: center; background-color: aquamarine;">
+        <h2>JavaScript Function To Format a Number to Specified decimal Places</h2><br>
+        <h3 style="color:blueviolet;">Enter a Real number:<input type="number" id="ext"></h3>
+        <h3 style="color: blueviolet;">Enter the a number to format:<input type="number" id="next"></h3><br><br>
+        <button id="Submit" onclick="decimals()">Submit</button>
+        <p id="demo"></p>
+        <script>
+            document.getElementById("demo").style.fontSize='30px';
+            document.getElementById('demo').style.color='blue';
+            function decimals(){
+            var n=Number(document.getElementById("ext").value);
+            var d=Number(document.getElementById("next").value);
+            var t=n.toFixed(d);
+            document.getElementById("demo").innerHTML= "The resultant after formating is:  " + t;
+            }
+        </script>
+    </body>
+    </html>

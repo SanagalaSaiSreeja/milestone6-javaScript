@@ -1,0 +1,27 @@
+<html>
+<center><body style="background-color:rgb(157, 245, 157);">
+<h2>Reversing a String</h2><br>
+<input type="text" id="hello">
+<button id="Submit" onclick="solve()">Submit</button>
+<p id="demo"></p>
+<p id="h"></p>
+<script>
+    document.getElementById("demo").style.fontSize='30px';
+    document.getElementById("h").style.fontSize='30px';
+    document.getElementById("demo").style.color='purple';
+    document.getElementById("h").style.color='purple';
+function solve(){
+var Talentio=document.getElementById("hello").value;
+try{
+var res=Talentio.split("").reverse().join("");
+document.getElementById("demo").innerHTML = "The Reversed String is :  " + res;
+document.getElementById("h").innerHTML = "The Type of the variable is :  " +typeof Talentio;
+}
+catch(err){
+document.getElementById("demo").innerHTML = err.message;
+document.getElementById("h").innerHTML ="The type of the variable is "+ typeof Talentio;}
+}
+
+</script>
+</body></center>
+</html>
